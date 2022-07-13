@@ -1,9 +1,13 @@
-package com.cg.spc.entities;
+package com.cg.spc.model;
 
-public class Address {
-	private String buildingName;
-	private String streetName;
-	private String cityName;
-	private String pincode;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name= "Teacher")
+#Table(name="Teacher_Table")
+public class Teacher {
+	@Id
+	private int teacherId;
 	
+
 }
